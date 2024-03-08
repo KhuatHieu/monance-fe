@@ -8,14 +8,12 @@ import {
   useMantineColorScheme,
 } from "@mantine/core";
 import { IconMoon, IconSun } from "@tabler/icons-react";
+import { t } from "i18next";
 import { ReactNode } from "react";
 import { Link } from "react-router-dom";
 
 const GuestLayout = ({ children }: { children: ReactNode }) => {
   const { colorScheme, toggleColorScheme } = useMantineColorScheme();
-
-  // dark: #18191A
-  // light: #F0F2F5
 
   return (
     <AppShell header={{ height: "3rem" }} padding={"md"}>
@@ -37,6 +35,8 @@ const GuestLayout = ({ children }: { children: ReactNode }) => {
             />
           </Link>
           <Flex ml={"auto"} gap={"1rem"} align={"center"}>
+            {/* <LanguageSwitcher /> */}
+
             <ActionIcon onClick={toggleColorScheme} variant="default">
               {colorScheme === "dark" ? (
                 <IconSun style={{ width: rem(14), height: rem(14) }} />
@@ -45,10 +45,10 @@ const GuestLayout = ({ children }: { children: ReactNode }) => {
               )}
             </ActionIcon>
             <Link to={"./sign-in"}>
-              <Button>Sign in</Button>
+              <Button>{t("authentication.signIn")}</Button>
             </Link>
             <Link to={"./sign-up"}>
-              <Button variant="outline">Sign up</Button>
+              <Button variant="outline">{t("authentication.signUp")}</Button>
             </Link>
           </Flex>
         </Flex>

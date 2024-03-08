@@ -1,4 +1,8 @@
+import { useDocumentTitle } from "@/hooks";
+
 const About = () => {
+  useDocumentTitle("About");
+
   return <div>About</div>;
 };
 

@@ -1,0 +1,29 @@
+{
+  "title": {
+    "signIn": "Sign in to Monance",
+    "signUp": "Sign up to Monance"
+  },
+  "landing-page": {
+    "title": "Monance",
+    "welcome": "Welcome to Monance."
+  },
+  "authentication": {
+    "signIn": "Sign in",
+    "signUp": "Sign up",
+    "forgotPassword": "Forgot password?",
+    "email": "Email",
+    "emailOrUsername": "Email or Username",
+    "password": "Password",
+    "firstName": "First name",
+    "lastName": "Last name",
+    "username": "Username",
+    "backToSignIn": "Back to Sign in"
+  },
+  "validation": {
+    "mustNotNull": "This field must not be null",
+    "mustNotEmpty": "This field must not be empty",
+    "mustNotBlank": "This field must not be blank",
+    "conflict": "This {{field}} has already been taken",
+    "minLength8": "This field must be longer than 8 characters"
+  }
+}

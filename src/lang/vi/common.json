@@ -1,0 +1,17 @@
+{
+  "title": {
+    "signIn": "Sign in to Monance",
+    "signUp": "Sign up to Monance"
+  },
+  "landing-page": {
+    "title": "Monance",
+    "welcome": "Chào mừng đến với Monance."
+  },
+  "authentication": {
+    "signIn": "Đăng nhập",
+    "signUp": "Đăng ký",
+    "forgotPassword": "Quên mật khẩu?",
+    "email": "Email",
+    "password": "Mật khẩu"
+  }
+}
