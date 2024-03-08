@@ -6,6 +6,8 @@ import { useState } from "react";
 const useAuth = () => {
   const [isLoading, setIsLoading] = useState(false);
 
+  const [isAuth, setIsAuth] = useState(false);
+
   const signIn = async (signInRequest: SignInRequest) => {
     setIsLoading(true);
 
@@ -22,13 +24,16 @@ const useAuth = () => {
       .finally(() => setIsLoading(false));
   };
 
-  const signOut = () => {};
+  const signOut = () => {
+    setIsAuth(false);
+  };
 
   return {
     signIn,
     signOut,
     signUp,
     isLoading,
+    isAuth,
   };
 };
 
